@@ -7,19 +7,17 @@ public class Main {
 		
 		
 		for (int i=1; i <= 9; i ++){
-			if ( i % 2 == 0) {
+//			if ( i % 2 == 0) {
 				for (int j=2; j <= 9; j ++) {
-					System.out.print(j + " X " + i + " = " + (j * i) + "\t");
-//		
-//			System.out.println("==============");
-				
-				}
-			System.out.println("");
-			}
+					if ((j*i) % 2 == 0) {
+						System.out.print(j + " X " + i + " = " + (j * i)+ "\t");
+					
+						}
+					else if(j % 2 == 1) System.out.print("\t\t");
 
-
-//곱해지는 수가 짝수일 때만 출력한
-
+					}
+			System.out.println();
+			
 		}
 
 	}
